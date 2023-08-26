@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getProducts } from "./data/api.js";
-import ProductList from "./components/ProductList/ProductList.js";
-import ProductDetailPage from "./components/ProductDetailPage/ProductDetailPage.js";
+import ListingPage from "./pages/ListingPage/ListingPage.js";
+import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage.js";
 import "./App.scss";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 	return (
 		<div className="App">
 			<Routes>
-				<Route path="/" element={<ProductList products={products} />} />
+				<Route path="/" element={<ListingPage products={products} />} />
 				<Route path="/products/:slug" element={<ProductDetailPage />} />
 			</Routes>
 		</div>
