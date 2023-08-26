@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import data from "./data/data.json";
 import ProductCard from "./components/ProductCard/ProductCard";
@@ -11,7 +10,7 @@ function App() {
 		<div className="App">
 			<Routes>
 				<Route path="/" element={<ProductCard products={products} />} />
-				<Route path="/product-detail" element={<ProductDetail />} />
+				<Route path="/products/:slug" element={<ProductDetail />} />
 			</Routes>
 		</div>
 	);

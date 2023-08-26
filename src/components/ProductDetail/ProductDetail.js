@@ -1,3 +1,13 @@
-// Product Detail
+import { useParams } from "react-router-dom";
 
-// Product Image, Name, SKU, Price, InStock, Favourite, Review, Tag (sale/space saver)
+const ProductDetail = () => {
+	let params = useParams();
+
+	return (
+		<p>
+			<b>ProductDetail - Slug:</b> {params.slug}
+		</p>
+	);
+};
+
+export default ProductDetail;

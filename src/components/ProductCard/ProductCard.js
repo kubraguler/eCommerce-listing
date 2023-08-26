@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./ProductCard.scss";
 
 const ProductCard = ({ products }) => {
-	console.log(products);
 	return (
 		<div className="product-list">
 			<main className="product-wrapper">
@@ -14,7 +13,7 @@ const ProductCard = ({ products }) => {
 							alt={product.image.attributes?.imageAltText}
 						/>
 						<div className="product-content">
-							<Link to="/product-detail">
+							<Link to={`/products${product.slug}`}>
 								<p className="product-name">{product.productName}</p>
 							</Link>
 							<p className="product-price">
