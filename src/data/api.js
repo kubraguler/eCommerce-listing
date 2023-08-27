@@ -1,10 +1,10 @@
-export const getProducts = async () => {
+export const getProducts = async (sortingOption) => {
 	const data = {
 		query: "toilets",
 		pageNumber: 0,
 		size: 0,
 		additionalPages: 0,
-		sort: 1
+		sort: sortingOption || 1
 	};
 
 	const options = {
