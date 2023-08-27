@@ -1,0 +1,17 @@
+.pagination {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 30px;
+
+	&-prev,
+	&-next {
+		padding: 5px;
+		width: 45px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

@@ -1,8 +1,8 @@
-export const getProducts = async (sortingOption) => {
+export const getProducts = async (sortingOption, page = 1, perPage) => {
 	const data = {
 		query: "toilets",
-		pageNumber: 0,
-		size: 0,
+		pageNumber: page,
+		size: perPage,
 		additionalPages: 0,
 		sort: sortingOption || 1
 	};
