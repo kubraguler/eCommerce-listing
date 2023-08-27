@@ -16,7 +16,7 @@ This is a product listing application that allows you to view products.
 
 ## Getting Started
 
-- **Clone the repository:** `git clone https://github.com/kubraguler/eCommerce-listing`
+- **Clone the repository:** `git clone https://github.com/your-username/eCommerce-listing`
 
 - **Install:** `cd ecommerce-listing` then `npm install`
 
