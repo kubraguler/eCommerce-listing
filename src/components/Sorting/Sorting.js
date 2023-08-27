@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import "./Sorting.scss";
+
 export const SortingOptions = {
 	Recommended: 1,
 	Lowest: 2,
@@ -17,14 +19,20 @@ const Sorting = ({ onValueChange }) => {
 	};
 
 	return (
-		<div>
-			<label>
+		<div className="sorting">
+			<label className="sorting-label">
 				Sort By
-				<select value={value} onChange={handleSelectChange}>
+				<select
+					className="sorting-selection"
+					value={value}
+					onChange={handleSelectChange}
+				>
 					<option value={SortingOptions.Recommended}>Recommended</option>
 					<option value={SortingOptions.Lowest}>Lowest Price</option>
 					<option value={SortingOptions.Highest}>Highest Price</option>
-					<option value={SortingOptions.LargestDiscount}>Highest Discount</option>
+					<option value={SortingOptions.LargestDiscount}>
+						Highest Discount
+					</option>
 				</select>
 			</label>
 		</div>
